@@ -1,4 +1,26 @@
-.current {
-  color: green;
+.body-ele {
+  background-color: #151515;
+  color: white;
 }
 
+.current {
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #224654;
+  color: white;
+
+  padding: 10px;
+
+  a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
