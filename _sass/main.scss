@@ -26,6 +26,13 @@ nav {
 
 .main-body {
   text-align: center;
-  font-size: 25px;
-  padding: 50px 50px;
+  font-size: 30px;
+  padding: 150px 150px;
+}
+
+@media (max-width: 481px) { //This will change CSS properties based on screen size
+  .main-body {
+    font-size: 25px;
+    padding: 50px 50px;
+  }
 }
