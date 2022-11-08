@@ -3,8 +3,6 @@
   color: #000000;
 }
 
-/* Navigation style rules */
-
 nav {
   background-color: #f8f8fa;
   color: #000000;
@@ -12,7 +10,7 @@ nav {
 
   a {
     padding: 5px;
-    color: #000000;
+    color: #3f3f3f;
     text-decoration: none;
   }
 
@@ -26,58 +24,8 @@ nav {
   text-decoration: underline;
 }
 
-
-/* Icon style rules */
-
-.icon-set {
-  width: 32px;
-  height: 32px;
-}
-
-/* Home page style rules */
-
-section.parent {
-  display: grid;
-  max-width: 900px;
-  position: relative;
-  margin: auto;
-  grid-gap: 10px;
-  grid-template-areas: "greeting"
-                        "intro-connect"
-                        "project-home-display";
-  grid-template-columns: 100%;
-  grid-template-rows: 75px 170px 75px;
-  border: #c0c2ce;
-  padding: 50px;
-  margin-top: 50px;
-  justify-items: center;
-  background-color: #c0c2ce;
-  font-size: 25px;
-  border-radius: 5px;
-}
- 
-section.child {
-  /*border: yellow solid;*/
-  border-bottom: #000000 solid;
-  padding: 15px;
-}
-
-#greeting {
-  grid-area: greeting;
-}
-
-#intro-connect {
-  grid-area: intro-connect;
-}
-
-#project-home-display {
-  grid-area: project-home-display;
-}
-
-section.child p {
+.main-body {
   text-align: center;
-
-  a {
-    text-decoration: none;
-  }
+  font-size: 25px;
+  padding: 50px 50px;
 }
