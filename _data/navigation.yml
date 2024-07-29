@@ -3,4 +3,6 @@
 - name: Projects
   link: /project.html
 - name: Blog
+  link: /blog.html
+- name: Hashnode
   link: https://otherdcn.hashnode.dev/
