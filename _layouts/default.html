@@ -13,11 +13,21 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 		<link rel="manifest" sizes="" href="/icons/site.webmanifest">
   </head>
-  <body class="body-ele">
-    {% include navigation.html %}
-    <section class="container">
+
+  <body>
+    <nav class="header">
+      {% include navigation.html %}
+    </nav>
+
+	<div class="main">
       {{ content }}
-    </section>
-    <!-- <footer style="background-color: green;">Made with Jekyll ❤️</footer> -->
+    </div>
+
+	<div class="footer">
+	  <div>
+		<p>Made with love using Jekyll</p>
+		<p>Logo icons created by <a href="https://www.flaticon.com/authors/riajulislam" title="logo icons" target="_blank">riajulislam on Flaticon</a></p>
+	  </div>
+	</div>
   </body>
 </html>
