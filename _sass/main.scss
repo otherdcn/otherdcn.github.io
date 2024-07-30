@@ -12,6 +12,10 @@ html,
 body {
   margin: 0;
   padding: 0;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 body {
@@ -134,6 +138,17 @@ nav {
 
 .tech-stack {
   font-size: 15px;
+}
+
+// .featured-projects {
+//   border: #fef222 solid 1px;
+//   border-radius: 10px;
+// }
+
+.all-projects-main {
+  ul {
+    list-style-type: circle;
+  }
 }
 
 // CSS selectors for blog-related files ***
