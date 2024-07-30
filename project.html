@@ -5,13 +5,39 @@ title: Projects
 
 <div class="all-projects-main">
   <h1>Project Portfolio</h1>
-  <ul>
+
+  <h2>Featured projects</h2>
+  <ul class="featured-projects">
     {% for project in site.projects %}
+      {% if project.featured %}
       <li>
-        <h2><a href="{{ project.url }}">{{ project.name }}</a></h2>
-        <h3>{{ project.desc }}</h3>
-        <p>{{ project.content | markdownify }}</p>
+        <h3>
+          <span><a href="{{ project.url }}">{{ project.name }}</a></span>
+          <span class="tech-stack">{{ project.tech_stack }}</span>
+        </h3>
+        <p>{{ project.desc }}</p>
       </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2>Other Projects</h2>
+  <ul class="other-projects">
+    {% for project in site.projects %}
+      {% if project.featured == false %}
+      <li>
+        <h3>
+          <span>
+            <a href="{{ project.url }}">{{ project.name }}</a>
+          </span>
+          <span class="tech-stack">
+            {{ project.tech_stack }}
+          </span>
+        </h3>
+        <p>{{ project.desc }}</p>
+      </li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
+

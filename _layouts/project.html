@@ -3,8 +3,23 @@ layout: default
 ---
 
 <div class="project-main">
-  <h1>{{ page.name }}</h1>
-  <h2>{{ page.desc }}</h2>
+  <h1 id="project-name">{{ page.name }}</h1>
+  <h2 id="project-description">{{ page.desc }}</h2>
+  <p>
+    <span  id="project-tag">Tags: {{ page.tag }}</span>
+    &middot;
+    <span id="project-source-code-link">
+      <a href="{{ page.github_repo }}">Github Repo</a>
+    </span>
+    {% if page.live_view %}
+    &middot;
+    <span id="project-live-view">
+      <a href="{{ page.live_view }}">Live View</a>
+    </span>
+    {% endif %}
+  </p>
+
+  <hr >
 
   {{ content }}
 </div>
