@@ -1,3 +1,5 @@
+//  *** CSS selectors for root ***
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +20,16 @@ body {
   flex-direction: column;
   //gap: 30px;
 }
+
+strong {
+  color: #fef222;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+// *** CSS selectors for default layout ***
 
 nav {
   //height: 10%;
@@ -41,22 +53,24 @@ nav {
   }
 }
 
-strong {
-  color: #fef222;
-}
-
-.logo-icon {
-  font-size: 9px;
-}
-
-.current {
-  text-decoration: underline;
-}
-
 .main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 10%;
+  width: 100%;
+  padding-top: 30px;
+  text-align: center;
+}
+
+// *** CSS selectors for index file ***
+
+.index-main {
   //height: 80%;
   width: 100%;
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +90,6 @@ strong {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px;
   padding: 15px 15px;
 
   p {
@@ -102,10 +115,37 @@ strong {
   }
 }
 
-.footer {
-  height: 10%;
-  width: 100%;
-  padding-top: 30px;
-  text-align: center;
+.logo-icon {
+  font-size: 9px;
 }
 
+// CSS selectors for project-related files ***
+
+.all-projects-main {
+  margin: 0;
+  padding: 10px 45px;
+}
+
+.project-main {
+  margin: 0;
+  padding: 10px 45px;
+}
+
+// CSS selectors for blog-related files ***
+
+.blog-main {
+  margin: 0;
+  padding: 10px 45px;
+}
+
+.post-main {
+  margin: 0;
+  padding: 10px 45px;
+}
+
+// *** CSS selectors for about-related files ***
+
+.about-main {
+  margin: 0;
+  padding: 10px 45px;
+}

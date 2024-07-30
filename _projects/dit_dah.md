@@ -7,5 +7,3 @@ github_repo: https://github.com/otherdcn/dit_dah
 ---
 
 A Ruby gem implementation of Morse code.
-
-
