@@ -1,5 +1,5 @@
 collections:
-  authors:
+  tags:
     output: true
   projects:
     output: true
@@ -7,7 +7,7 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: "authors"
+      type: "tags"
     values:
       layout: "author"
   - scope:
