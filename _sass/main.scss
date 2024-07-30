@@ -70,11 +70,12 @@ nav {
 
 .index-main {
   //height: 80%;
-  width: 100%;
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 16px;
 }
 
